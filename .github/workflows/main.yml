@@ -1,0 +1,29 @@
+name: Update gist with latest Bilibili videos
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  schedule:
+    - cron: "1 */7 * * *"
+
+jobs:
+  update-gist:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@master
+
+      - name: "Setup Deno"
+        uses: denolib/setup-deno@v2
+        with:
+          deno-version: v1.x
+
+      - name: "Update gist"
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GIST_ID: a74258deecd487f992a6a446ec62c05c
+          UID: '596324576'
+        run: deno run --allow-net --allow-env index.ts
