@@ -10,6 +10,8 @@
 
 ## Setup
 
+English | [中文](./readme.zh.md)
+
 ### Prep work
 
 1. Create a new public GitHub Gist (https://gist.github.com/)
@@ -22,7 +24,7 @@
 1. Fork this repo
 1. Edit the [environment variables](https://github.com/KeJunMao/bilibili-box/blob/master/.github/workflows/main.yml#L27-L28) in `.github/workflows/schedule.yml`:
 
-   - **UID:** The user handle of the twitter account.
+   - **UID:** The user handle of the bilibili account.
    - **GIST_ID:** The ID portion from your gist url: `https://gist.github.com/matchai/`**`6d5f84419863089a167387da62dd7081`**.
 
 1. Go to the repo **Settings > Secrets**
