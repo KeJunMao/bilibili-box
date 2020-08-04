@@ -20,7 +20,7 @@
 ### Project setup
 
 1. Fork this repo
-1. Edit the [environment variables](https://github.com/kejunmao/bilibili-box/.github/workflows/schedule.yml#L27) in `.github/workflows/schedule.yml`:
+1. Edit the [environment variables](https://github.com/KeJunMao/bilibili-box/blob/master/.github/workflows/main.yml#L27-L28) in `.github/workflows/schedule.yml`:
 
    - **UID:** The user handle of the twitter account.
    - **GIST_ID:** The ID portion from your gist url: `https://gist.github.com/matchai/`**`6d5f84419863089a167387da62dd7081`**.
